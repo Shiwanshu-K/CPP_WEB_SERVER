@@ -16,7 +16,7 @@ namespace HDE
         void responder() override;
     public:
         TestServer(/* args */);
-        void launch();
+        void launch() override;
     };
     
     TestServer::TestServer() : SimpleServer(AF_INET,SOCK_STREAM,0,80,INADDR_ANY,10)
